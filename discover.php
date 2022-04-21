@@ -1,3 +1,13 @@
+<?php
+if (isset($_POST['C1'])) {
+    $file_pointer = fopen($_POST['C3'] . ".demo", 'x+');
+    fwrite($file_pointer, "Prénom et Nom : " . $_POST['C1'] . "\n");
+    fwrite($file_pointer, "Téléphone : " . $_POST['C2'] . "\n");
+    fwrite($file_pointer, "Société : " . $_POST['C3'] . "\n");
+    fwrite($file_pointer, "Email : " . $_POST['C4'] . "\n");
+    fclose($file_pointer);
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include_once("header.php") ?>
@@ -22,34 +32,45 @@
                             <h3 class="subtitle wow fadeInUp"><span>Email</span>contact@sisteos.com</h3>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
 
-                            <form action="contact.php" method="post">
+                            <?php if (isset($_POST['C1'])) { ?>
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" placeholder="Prénom et Nom" required>
+                                <p class="description wow">
+                                    <strong>
+                                    Votre demande a bien été enregistrée.<br/>
+                                    Nos équipes commerciales vous contacteront rapidement.
+                                    </strong>
+                                </p>
+
+                            <?php } else { ?>
+                                <form action="discover.php" method="post">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="C1" placeholder="Prénom et Nom" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="C2" placeholder="Numéro de Téléphone">
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <input type="email" name="email" placeholder="Numéro de Téléphone">
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="text" name="C3" placeholder="Société" required>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input type="text" name="name" placeholder="Société" required>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="email" name="C4" placeholder="Adresse Email" required>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input type="text" name="name" placeholder="Adresse Email" required>
-                                    </div>
-                                </div>
+                                    <button type="submit" class="pix-btn submit-btn">
+                                        <span class="btn-text">Envoyer le Message</span>
+                                    </button>
 
-                                <button type="submit" class="pix-btn submit-btn">
-                                    <span class="btn-text">Envoyer le Message</span>
-                                </button>
-
-                            </form>
+                                </form>
+                            <?php } ?>
 
                             </p>
                         </div>
