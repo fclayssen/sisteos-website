@@ -2,6 +2,7 @@
 <html lang="fr">
 <?php include_once("header.php") ?>
 <body id="home-version-6" class="home-version-6" data-style="default">
+    <?php include_once("piwik.php") ?>
     <?php include_once("loader.php") ?>
     <div id="main_content">
         <?php include_once("menu.php") ?>
@@ -11,7 +12,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
-                            <h3 class="subtitle wow fadeInUp"><span>Nouveaut&eacute;</span>Nouvelle loi sur le DU</h3>
+                            <h3 class="subtitle wow fadeInUp"><span>Nouveaut&eacute;</span>Prise en compte de la nouvelle loi sur le Document Unique</h3>
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
                                 <span>Facilitez votre Gestion Sant&eacute; et S&eacute;curit&eacute; au Travail</span>
                             </h1>
@@ -359,7 +360,7 @@
         </section>
 
         <?php include_once("demonstration.php") ?>
-        <?php include_once("clients.php") ?>
+        <br/>
         <?php include_once("footer.php") ?>
     </div>
     <script src="dependencies/jquery/jquery.min.js"></script>

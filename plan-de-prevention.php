@@ -2,6 +2,7 @@
 <html lang="fr">
 <?php include_once("header.php") ?>
 <body id="home-version-6" class="home-version-6" data-style="default">
+    <?php include_once("piwik.php") ?>
     <?php include_once("loader.php") ?>
     <div id="main_content">
         <?php include_once("menu.php") ?>
