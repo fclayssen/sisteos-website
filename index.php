@@ -265,7 +265,7 @@
                                 <div class="section-title style-eight">
                                     <h2 class="title wow fadeInUp" data-wow-delay="0.5s">Une Gestion simple et globale du Plan d'Action</h2>
                                     <p class="description wow fadeInUp" data-wow-delay="0.7s">
-                                        Visualiser, Filtrer et Metter à jour les différentes actions qui vous sont attribués.
+                                        Visualiser, Filtrer et Mettre à jour les différentes actions qui vous sont attribuées.
                                         <br/><br/>
                                         Comme administrateur, vous suivez en quelques clics l'état des actions des
                                         différents pilotes.
