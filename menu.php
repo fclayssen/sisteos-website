@@ -29,22 +29,22 @@
 
                 <div class="menu-wrapper" data-top="992">
                     <ul class="site-main-menu">
-                        <li><a style="font-size: 12px;" href="index.php">Accueil</a></li>
-                        <li><a style="font-size: 12px;" href="document-unique.php">Document Unique</a></li>
-                        <li><a style="font-size: 12px;" href="accident-du-travail.php">Accident du Travail</a></li>
-                        <li><a style="font-size: 12px;" href="plan-de-prevention.php">Plan de Prévention</a></li>
+                        <li><a style="font-size: 12px;" href="accueil">Accueil</a></li>
+                        <li><a style="font-size: 12px;" href="document-unique">Document Unique</a></li>
+                        <li><a style="font-size: 12px;" href="accident-du-travail">Accident du Travail</a></li>
+                        <li><a style="font-size: 12px;" href="plan-de-prevention">Plan de Prévention</a></li>
                         <li class="menu-item-has-children">
-                            <a href="blog.html" style="font-size: 12px;">Autres Modules</a>
+                            <a href="#" style="font-size: 12px;">Autres Modules</a>
                             <ul class="sub-menu">
-                                <li><a href="penibilite.php" style="font-size: 12px;">Pénibilité</a></li>
-                                <li><a href="audit.php" style="font-size: 12px;">Audit</a></li>
+                                <li><a href="penibilite" style="font-size: 12px;">Pénibilité</a></li>
+                                <li><a href="audit" style="font-size: 12px;">Audit</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
 
                 <div class="nav-right">
-                    <a href="contact.php" class="nav-btn">Nous Contacter</a>
+                    <a href="contact" class="nav-btn">Nous Contacter</a>
                 </div>
 
             </nav>

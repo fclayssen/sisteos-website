@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^document-unique$ document-unique.php [L]
+RewriteRule ^accident-du-travail$ accident-du-travail.php [L]
+RewriteRule ^audit$ audit.php [L]
+RewriteRule ^penibilite$ penibilite.php [L]
+RewriteRule ^plan-de-prevention$ plan-de-prevention.php [L]
+RewriteRule ^contact$ contact.php [L]
+RewriteRule ^demonstration$ discover.php [L]
+RewriteRule ^accueil$ index.php [L]

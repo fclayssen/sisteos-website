@@ -17,7 +17,7 @@
                             de votre entreprise.
                         </p>
                         <div class="app-btn-wrapper">
-                            <a href="discover.php" class="app-btn-two wow flipInX" data-wow-delay="0.5s">
+                            <a href="demonstration" class="app-btn-two wow flipInX" data-wow-delay="0.5s">
                                 <span class="btn-text">
                                     <span class="text-top">Cliquez pour vous inscrire</span>
                                 </span>

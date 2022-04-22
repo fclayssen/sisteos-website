@@ -42,7 +42,7 @@ if (isset($_POST['C1'])) {
                                 </p>
 
                             <?php } else { ?>
-                                <form action="discover.php" method="post">
+                                <form action="demonstration" method="post">
 
                                     <div class="row">
                                         <div class="col-md-6">

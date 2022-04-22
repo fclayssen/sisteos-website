@@ -41,7 +41,7 @@
 
                                 <?php } else { ?>
 
-                                    <form action="contact.php" method="post">
+                                    <form action="contact" method="post">
 
                                         <div class="row">
                                             <div class="col-md-6">

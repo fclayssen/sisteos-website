@@ -359,7 +359,9 @@
         </section>
 
         <?php include_once("demonstration.php") ?>
+        <!--
         <?php include_once("team.php") ?>
+        -->
         <?php include_once("clients.php") ?>
         <?php include_once("footer.php") ?>
     </div>
