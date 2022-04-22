@@ -1,3 +1,8 @@
+<?php
+session_start();
+$pageName = "accident-du-travail";
+include_once("lang.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include_once("header.php") ?>
@@ -13,12 +18,10 @@
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
-                                <span>Module Accident du Travail | AT/MP - Facile, Rapide et Intuitif</span>
+                                <span><?php echo $text084 ?></span>
                             </h1>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
-                                Faciliter les analyses<br/>
-                                Recenser toutes les fiches des accidents de vos employés<br/>
-                                Piloter et gérer vos plans d'actions
+                                <?php echo $text085 ?>
                             </p>
                         </div>
                     </div>
@@ -58,48 +61,34 @@
                             <div class="interface-content pt-7">
                                 <div class="interface-title pixFadeUp">
                                     <h2>
-                                        Les avantages de votre module Accident du Travail
+                                        <?php echo $text086 ?>
                                     </h2>
                                     <br/>
                                 </div>
-                                <!-- /.section-title style-two -->
-                                Grâce au Module Document Unique du logiciel SISTÉOS, vous pourrez :
+                                <?php echo $text087 ?>
                                 <br/><br/>
                                 <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-                                    <li>Le module facilitera l’analyse des accidents du travail avec arrêts. Cette aide précieuse vous permettra de construire l’arbre des causes.</li>
-                                    <li>Répertorier et analyser les différents types d’accidents comprenant les presq’accidents et les accidents bénins.</li>
-                                    <li>Gérer les retours de visites médicales et télécharger les AT/MP en cours de validation.</li>
+                                    <li><?php echo $text088 ?></li>
+                                    <li><?php echo $text089 ?></li>
+                                    <li><?php echo $text090 ?></li>
                                 </ul>
-
                             </div>
-                            <!-- /.interface-content -->
                         </div>
-                        <!-- /.col-lg-6 -->
-
-
                         <div class="col-lg-5">
                             <div class="interface-content pt-7">
-                                Quels sont les accidents travails/Maladie professionnelles les plus courant dans votre entreprise ?
+                                <?php echo $text091 ?>
                                 <br/><br/>
-                                Le module d’analyse d’accident au travail et des maladies professionnelles vous permet de le savoir et d’en réduire le nombre. Ce logiciel vous permet de mettre en place un suivi avec des tableaux le tout répertorié dans un plan d’action.
-                                <br/>Une meilleure analyse pour une diminution des risques au sein de votre entreprise. Une solution pour plusieurs avantages :
+                                <?php echo $text092 ?>
                                 <br/><br>
                                 <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-                                    <li>Un enjeu financier en réduisant vos coûts</li>
-                                    <li>Une meilleure productivité en définissant les causes pour mettre en place des actions</li>
-                                    <li>Une réponse correcte aux obligations légales</li>
+                                    <li><?php echo $text093 ?></li>
+                                    <li><?php echo $text094 ?></li>
+                                    <li><?php echo $text095 ?></li>
                                 </ul>
-
                             </div>
-                            <!-- /.interface-image-wrapper -->
                         </div>
-                        <!-- /.col-lg-6 -->
                     </div>
-                    <!-- /.interface-toparea -->
-
                 </div>
-                <!-- /.row -->
-
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="interface-image-wrapper style-two">
@@ -116,48 +105,36 @@
                                 <path fill-rule="evenodd" opacity="0.102" fill="rgb(82, 251, 237)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
                             </svg>
                         </div>
-                        <!-- /.interface-image-wrapper -->
                     </div>
-                    <!-- /.col-lg-6 -->
-
                     <div class="col-lg-5 pix-order-one">
                         <div class="interface-content">
 
                             <div class="interface-title pixFadeUp">
                                 <h4>
-                                    1. Faciliter les analyses AT/MP
+                                    <?php echo $text096 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Analyse des accidents de travail avec arrêt, construction de l’arbre des causes, presque accident, accident bénin...<br/>
-                                    Formaliser la mise en place des plans d’action et suivis réguliers<br/>
-                                    Protéger l’exposition de vos salariés à l’ensemble des facteurs de risques identifiés
+                                    <?php echo $text097 ?>
                                 </p>
 
                                 <h4>
-                                    2. Recenser toutes les fiches des accidents de vos employés
+                                    <?php echo $text098 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Visualiser les circonstances de l’accident ou de la maladie (témoignage, documents, analyses des causes, description)<br/>
-                                    Visualiser les plans d’action qui ont été mis en place (actions retenues et non retenues)
+                                    <?php echo $text099 ?>
                                 </p>
 
                                 <h4>
-                                    3. Piloter et gérer vos plans d’actions
+                                    <?php echo $text100 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Évaluer et mesurer l’efficacité des actions et l’amélioration des performances grâce à des tableaux de bord, des statistiques et des graphiques visuels.
+                                    <?php echo $text101 ?>
                                 </p>
 
                             </div>
-                            <!-- /.section-title style-two -->
-
                         </div>
-                        <!-- /.interface-content -->
                     </div>
-                    <!-- /.col-lg-6 -->
                 </div>
-                <!-- /.row -->
-
                 <div class="border-wrap">
                     <span class="ball" data-parallax='{"x" : -100}'></span>
                     <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->

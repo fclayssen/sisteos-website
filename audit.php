@@ -1,3 +1,8 @@
+<?php
+session_start();
+$pageName = "audit";
+include_once("lang.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include_once("header.php") ?>
@@ -13,11 +18,10 @@
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
-                                <span>Module Audit - Une interface simple et intuitive pour réaliser vos audits QSE</span>
+                                <span><?php echo $text120 ?></span>
                             </h1>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
-                                Véritable outil essentiel dans votre démarche Santé & sécurité au travail, l’audit permet de vérifier l’application, la conformité et l’efficacité de votre système de management S&ST ainsi que les plans d’actions envisageables pour l’améliorer.
-                                En fonction de vos attentes, les audits peuvent porter sur votre système complet ou bien sur une seule partie
+                                <?php echo $text121 ?>
                             </p>
                         </div>
                     </div>
@@ -57,41 +61,31 @@
                             <div class="interface-content pt-7">
                                 <div class="interface-title pixFadeUp">
                                     <h2>
-                                        Diagnostiquer vos risques à l’aide d’un outil éprouvé : l’Audit (pratique)
+                                        <?php echo $text122 ?>
                                     </h2>
                                     <br/>
                                 </div>
-                                <!-- /.section-title style-two -->
                                 <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-                                    <li>Confronter les exigences de conformité légale applicables à votre secteur d’activité avec la réalité de l’existant dans votre entreprise</li>
-                                    <li>Évaluer votre niveau de maitrise des exigences attendues en matière de SST compte tenu du périmètre de vos activité</li>
-                                    <li>Bâtir un programme d’amélioration de performance en suivant votre document audit</li>
+                                    <li><?php echo $text123 ?></li>
+                                    <li><?php echo $text124 ?></li>
+                                    <li><?php echo $text125 ?></li>
                                 </ul>
 
                             </div>
-                            <!-- /.interface-content -->
                         </div>
-                        <!-- /.col-lg-6 -->
-
-
                         <div class="col-lg-5">
                             <div class="interface-content pt-7">
                                 <br/><br>
                                 <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-                                    <li>Cibler des actions à prioriser pour améliorer la prise en charge de la SST</li>
-                                    <li>Effectuer un suivi des progrès interne accomplis en réalisant périodiquement le diagnostic</li>
-                                    <li>Soutenir le dialogue autour du management de la prévention des risques pour la SST au sein de votre établissement</li>
+                                    <li><?php echo $text126 ?></li>
+                                    <li><?php echo $text127 ?></li>
+                                    <li><?php echo $text128 ?></li>
                                 </ul>
 
                             </div>
-                            <!-- /.interface-image-wrapper -->
                         </div>
-                        <!-- /.col-lg-6 -->
                     </div>
-                    <!-- /.interface-toparea -->
-
                 </div>
-                <!-- /.row -->
 
                 <div class="row">
                     <div class="col-lg-7">
@@ -109,45 +103,37 @@
                                 <path fill-rule="evenodd" opacity="0.102" fill="rgb(82, 251, 237)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
                             </svg>
                         </div>
-                        <!-- /.interface-image-wrapper -->
                     </div>
-                    <!-- /.col-lg-6 -->
 
                     <div class="col-lg-5 pix-order-one">
                         <div class="interface-content">
 
                             <div class="interface-title pixFadeUp">
                                 <h4>
-                                    1. Évaluer votre niveau de maîtrise de votre politique S&ST
+                                    <?php echo $text129 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Evaluer le niveau de conformité de votre entreprise en matière de Santé & Sécurité au Travail, objectivé par un audit personnalisé et prenant en compte le périmètre des obligations légales applicables dans votre secteur d’activité
-                                    <br/>Calculer le niveau de performance en matière de maîtrise des obligations légales, recommandations et bonnes pratiques dans le domaine de la Santé & Sécurité au Travail
+                                    <?php echo $text130 ?>
                                 </p>
 
                                 <h4>
-                                    2. Bâtir un programme d’amélioration de performances à partir de grilles paramétrables
+                                    <?php echo $text131 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Thèmes, Items, Cotations .... Tout est paramétrable
+                                    <?php echo $text132 ?>
                                 </p>
 
                                 <h4>
-                                    3. Piloter et gérer vos plans d’actions
+                                    <?php echo $text133 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Evaluer et Mesurer l’efficacité des actions et l’amélioration des performances grâce à des tableaux de bord et graphiques visuels
+                                    <?php echo $text134 ?>
                                 </p>
 
                             </div>
-                            <!-- /.section-title style-two -->
-
                         </div>
-                        <!-- /.interface-content -->
                     </div>
-                    <!-- /.col-lg-6 -->
                 </div>
-                <!-- /.row -->
 
                 <div class="border-wrap">
                     <span class="ball" data-parallax='{"x" : -100}'></span>

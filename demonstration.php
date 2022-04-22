@@ -10,16 +10,14 @@
                 </div>
                 <div class="col-lg-5 pix-order-one">
                     <div class="download-wrapper-two">
-                        <h2 class="title wow pixFadeUp">Vous souhaitez découvrer la plateforme SISTEOS ?</h2>
+                        <h2 class="title wow pixFadeUp"><?php echo $text050 ?></h2>
                         <p class="wow pixFadeUp" data-wow-delay="0.3s" style="color:black;">
-                            Contactez-nous et nos équipes commerciales vous proposerons une démonstration complète
-                            de notre plateforme pour découvrir comment vous facilitez la gestion santé et sécurité
-                            de votre entreprise.
+                            <?php echo $text051 ?>
                         </p>
                         <div class="app-btn-wrapper">
                             <a href="demonstration" class="app-btn-two wow flipInX" data-wow-delay="0.5s">
                                 <span class="btn-text">
-                                    <span class="text-top">Cliquez pour vous inscrire</span>
+                                    <span class="text-top"><?php echo $text052 ?></span>
                                 </span>
                             </a>
                         </div>

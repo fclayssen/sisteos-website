@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $pageName = "index.php";
+    include_once("lang.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include_once("header.php") ?>
@@ -12,16 +17,16 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
-                            <h3 class="subtitle wow fadeInUp"><span>Nouveaut&eacute;</span>Prise en compte de la nouvelle loi sur le Document Unique</h3>
+                            <h3 class="subtitle wow fadeInUp"><span><?php echo $text002 ?></span><?php echo $text003 ?></h3>
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
-                                <span>Facilitez votre Gestion Sant&eacute; et S&eacute;curit&eacute; au Travail</span>
+                                <span><?php echo $text001 ?></span>
                             </h1>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
-                                G&eacute;n&eacute;rer vos documents uniques, R&eacute;aliser vos Audits, &Eacute;valuer les risques li&eacute;s à la p&eacute;nibilit&eacute; de vos emplois, R&eacute;pertorier les accidents de travail et maladies professionnelles.
+                                <?php echo $text004 ?>
                             </p>
                             <div class="banner-button-container">
                                 <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="play-btn play-btn-outline popup-video wow pixFadeUp" data-wow-delay="0.6s">
-                                    <i class="ei ei-arrow_triangle-right"></i> Présentation de notre plateforme</a>
+                                    <i class="ei ei-arrow_triangle-right"></i> <?php echo $text005 ?></a>
                             </div>
                         </div>
                     </div>
@@ -56,9 +61,9 @@
         <section class="featured-nine">
             <div class="container">
                 <div class="section-title style-five text-center">
-                    <h3 class="sub-title wow pixFadeUp">Une interface intuitive, des automatisations, une plateforme saas toujours disponible</h3>
+                    <h3 class="sub-title wow pixFadeUp"><?php echo $text006 ?></h3>
                     <h2 class="title wow pixFadeUp" data-wow-delay="0.2s">
-                        Une Solution Dédiée à la gestion de vos problématiques Santé et Sécurité au Travail
+                        <?php echo $text007 ?>
                     </h2>
                 </div>
 
@@ -69,9 +74,9 @@
                                 <img src="media/feature/61.png" alt="">
                             </div>
                             <div class="pixsass-icon-box-content">
-                                <h3 class="pixsass-icon-box-title"><a href="#">Une Interface Ergonomique</a></h3>
+                                <h3 class="pixsass-icon-box-title"><a href="#"><?php echo $text008 ?></a></h3>
                                 <p>
-                                    Une interface qui s’adaptera à vos enjeux et à vos contraintes grâce à une ergonomie intuitive et conviviale
+                                    <?php echo $text009 ?>
                                 </p>
                             </div>
                         </div>
@@ -83,10 +88,10 @@
                                 <img src="media/feature/62.png" alt="">
                             </div>
                             <div class="pixsass-icon-box-content">
-                                <h3 class="pixsass-icon-box-title"><a href="#">Des Alertes Automatiques</a></h3>
+                                <h3 class="pixsass-icon-box-title"><a href="#"><?php echo $text010 ?></a></h3>
 
                                 <p>
-                                    Recevez des alertes et des relances programmée par email pour vous rappeler et vous aider à suivre vos actions
+                                    <?php echo $text011 ?>
                                 </p>
                             </div>
                         </div>
@@ -98,10 +103,9 @@
                                 <img src="media/feature/63.png" alt="">
                             </div>
                             <div class="pixsass-icon-box-content">
-                                <h3 class="pixsass-icon-box-title"><a href="#">Des Statistiques Complètes</a></h3>
+                                <h3 class="pixsass-icon-box-title"><a href="#"><?php echo $text012 ?></a></h3>
                                 <p>
-                                    Générez des rapports statistiques et des graphiques analytiques permettant de
-                                    synthétiser en un clic vos données
+                                    <?php echo $text013 ?>
                                 </p>
                             </div>
                         </div>
@@ -118,38 +122,35 @@
                             <div class="col-lg-5">
                                 <div class="download-tab-content">
                                     <div class="section-title style-five">
-                                        <h3 class="sub-title wow fadeInUp">Nos Modules Santé et Sécurité au Travail</h3>
-                                        <!--
-                                        <h2 class="title wow fadeInUp" data-wow-delay="0.3s">Document Unique</h2>
-                                        -->
+                                        <h3 class="sub-title wow fadeInUp"><?php echo $text014 ?></h3>
                                         <p class="wow fadeInUp" data-wow-delay="0.5s">
-                                            Nos modules sont activables à tout moment et communique entre eux pour partager les informations.
+                                            <?php echo $text015 ?>
                                         </p>
                                     </div>
                                     <ul id="pix-tabs-nav" class="wow fadeInUp" data-wow-delay="0.7s">
                                         <li>
                                             <a href="#feature_tab1">
-                                                Accident du Travail
+                                                <?php echo $text016 ?>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#feature_tab2">
-                                                Document Unique
+                                                <?php echo $text017 ?>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#feature_tab3">
-                                                Plan de Pr&eacute;vention
+                                                <?php echo $text018 ?>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#feature_tab4">
-                                                Pénibilité
+                                                <?php echo $text019 ?>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#feature_tab5">
-                                                Audit
+                                                <?php echo $text020 ?>
                                             </a>
                                         </li>
                                     </ul>
@@ -163,10 +164,8 @@
                                                 <img src="media/at.png" alt="sasspik tab">
                                                 <br/><br/>
                                                 <span style="color: #555555;">
-                                                    Faciliter les analyses<br/>
-                                                    Recenser toutes les fiches des accidents de vos employés<br/>
-                                                    Piloter et gérer vos plans d'actions<br/><br/>
-                                                    <a href="accident-du-travail.php" class="pix-btn btn-info">Cliquez pour plus d'information sur les Accidents du Travail</a>
+                                                    <?php echo $text021 ?>
+                                                    <a href="accident-du-travail.php" class="pix-btn btn-info"><?php echo $text022 ?></a>
                                                 </span>
                                             </div>
                                         </div>
@@ -175,10 +174,8 @@
                                                 <img src="media/duerp.png" alt="sasspik tab">
                                                 <br/><br/>
                                                 <span style="color: #555555;">
-                                                    Répertorier vos risques<br/>
-                                                    Identifier les dangers par unités de travail<br/>
-                                                    Automatiser l’édition de votre document unique et de gagner du temps<br/><br/>
-                                                    <a href="document-unique.php" class="pix-btn btn-info">Cliquez pour plus d'information sur le Document Unique</a>
+                                                    <?php echo $text023 ?>
+                                                    <a href="document-unique.php" class="pix-btn btn-info"><?php echo $text024 ?></a>
                                                 </span>
                                             </div>
                                         </div>
@@ -187,10 +184,8 @@
                                                 <img src="media/duerp.png" alt="sasspik tab">
                                                 <br/><br/>
                                                 <span style="color: #555555;">
-                                                    Créer vos plans à partir de modèle<br/>
-                                                    Gestion des échanges avec vos prestatires<br/>
-                                                    Signature Electronique des documens<br/><br/>
-                                                    <a href="plan-de-prevention.php" class="pix-btn btn-info">Cliquez pour plus d'information sur le Plan de Prévention</a>
+                                                    <?php echo $text025 ?>
+                                                    <a href="plan-de-prevention.php" class="pix-btn btn-info"><?php echo $text026 ?></a>
                                                 </span>
                                             </div>
                                         </div>
@@ -199,10 +194,8 @@
                                                 <img src="media/duerp.png" alt="sasspik tab">
                                                 <br/><br/>
                                                 <span style="color: #555555;">
-                                                    Définir des facteurs de pénibilité éligibles au sein de votre organisation<br/>
-                                                    Définir de seuils, limites, intensités, durées quotidiennes et/ou hebdomadaires ou fréquences d’exposition<br/>
-                                                    Définir les cotations de la pénibilité des emplois de l’organisation<br/><br/>
-                                                    <a href="penibilite.php" class="pix-btn btn-info">Cliquez pour plus d'information sur le Pénibilité</a>
+                                                    <?php echo $text027 ?>
+                                                    <a href="penibilite.php" class="pix-btn btn-info"><?php echo $text028 ?></a>
                                                 </span>
                                             </div>
                                         </div>
@@ -211,9 +204,9 @@
                                                 <img src="media/duerp.png" alt="sasspik tab">
                                                 <br/><br/>
                                                 <span style="color: #555555;">
-                                                    Véritable outil essentiel dans votre démarche Santé & sécurité au travail, l’audit permet de vérifier l’application, la conformité et l’efficacité de votre système de management S&ST ainsi que les plans d’actions envisageables pour l’améliorer
+                                                    <?php echo $text029 ?>
                                                     <br/><br/>
-                                                    <a href="audit.php" class="pix-btn btn-info">Cliquez pour plus d'information sur l'Audit</a>
+                                                    <a href="audit.php" class="pix-btn btn-info"><?php echo $text030 ?></a>
                                                 </span>
                                             </div>
                                         </div>
@@ -264,12 +257,9 @@
                         <div class="col-lg-5">
                             <div class="layout-content">
                                 <div class="section-title style-eight">
-                                    <h2 class="title wow fadeInUp" data-wow-delay="0.5s">Une Gestion simple et globale du Plan d'Action</h2>
+                                    <h2 class="title wow fadeInUp" data-wow-delay="0.5s"><?php echo $text031 ?></h2>
                                     <p class="description wow fadeInUp" data-wow-delay="0.7s">
-                                        Visualiser, Filtrer et Mettre à jour les différentes actions qui vous sont attribuées.
-                                        <br/><br/>
-                                        Comme administrateur, vous suivez en quelques clics l'état des actions des
-                                        différents pilotes.
+                                        <?php echo $text032 ?>
                                     </p>
                                 </div>
                             </div>
@@ -293,9 +283,7 @@
                                 <img src="media/eco.png" class="wow fadeInDown" alt="saaspik">
                                 <br/>
                                 <span style="font-size: 12px;">
-                                    Accès Sécurisé en HTTPS avec Certificat SSL<br/>
-                                    Sauvegarde automatique de vos données<br/>
-                                    Nos serveurs sont localisés en France
+                                    <?php echo $text033 ?>
                                 </span>
                             </div>
                         </div>
@@ -303,15 +291,15 @@
                             <div class="image-content-three app-content-wrap pl-85">
                                 <div class="section-title">
                                     <h2 class="title wow fadeInUp">
-                                        Un écosystème pour gérer l'ensemble des éléments Santé et Sécurité au Travail et pour vous permettre de vous concentrer sur votre activité.
+                                        <?php echo $text034 ?>
                                     </h2>
                                     <ul class="list-items list-icon-arrow wow fadeInUp" data-wow-delay="0.4s">
-                                        <li>Différents type d'accès : administrateur, Manager, Collaborateur</li>
-                                        <li>Saisissez vos données simplement et rapidement</li>
-                                        <li>Piloter avec nos tableaux de bord</li>
-                                        <li>Suivre les actions avec les relances</li>
-                                        <li>Visualiser les statistiques</li>
-                                        <li>Totalement paramétrable</li>
+                                        <li><?php echo $text035 ?></li>
+                                        <li><?php echo $text036 ?></li>
+                                        <li><?php echo $text037 ?></li>
+                                        <li><?php echo $text038 ?></li>
+                                        <li><?php echo $text039 ?></li>
+                                        <li><?php echo $text040 ?></li>
                                     </ul>
                                 </div>
                             </div>
@@ -325,20 +313,16 @@
                             <div class="image-content-three app-content-wrap pr-85">
                                 <div class="section-title">
                                     <h2 class="title wow fadeInUp">
-                                        Un Support dédié et Humain pour vous épauler
+                                        <?php echo $text041 ?>
                                     </h2>
 
                                     <p class="wow fadeInUp" data-wow-delay="0.3s">
-                                        Nous vous accompagnons pour vous offrir un support Humain et Efficace car vous
-                                        êtes plus qu'un client !
-                                        <br/><br/>
-                                        Dans le processus d'utilisation de la plateforme nous sommes à vos côtés pour
-                                        déployer, former et conseiller afin que l'utilisation en soit optimale.
+                                        <?php echo $text042 ?>
                                     </p>
                                     <ul class="list-items list-icon-arrow wow fadeInUp" data-wow-delay="0.4s">
-                                        <li>Support Téléphonique</li>
-                                        <li>Gestion des Tickets</li>
-                                        <li>Support par Email</li>
+                                        <li><?php echo $text043 ?></li>
+                                        <li><?php echo $text044 ?></li>
+                                        <li><?php echo $text045 ?></li>
                                     </ul>
                                 </div>
                             </div>
@@ -348,9 +332,7 @@
                                 <img src="media/support.png" class="wow fadeInDown" alt="saaspik">
                                 <br/><br/>
                                 <span style="font-size: 12px;">
-                                    Tout au long du processus de mise en place de la plateforme<br/>
-                                    nos spécialistes métier et nos ingénieurs techniques<br/>
-                                    sont toujours à vos côtés.
+                                    <?php echo $text046 ?>
                                 </span>
                             </div>
                         </div>

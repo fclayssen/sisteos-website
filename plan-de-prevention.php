@@ -1,3 +1,8 @@
+<?php
+session_start();
+$pageName = "plan-de-prevention";
+include_once("lang.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include_once("header.php") ?>
@@ -13,7 +18,7 @@
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
-                                <span>Module Plan de Prévention - Facile, Rapide et Intuitif</span>
+                                <span><?php echo $text104 ?></span>
                             </h1>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
 

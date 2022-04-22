@@ -1,3 +1,8 @@
+<?php
+session_start();
+$pageName = "document-unique";
+include_once("lang.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include_once("header.php") ?>
@@ -13,13 +18,10 @@
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
-                                <span>Module Document Unique | DU | DUEvRP - Facile, Rapide et Intuitif</span>
+                                <span><?php echo $text053 ?></span>
                             </h1>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
-                                Créer, mettre à jour et éditer le Document Unique à partir d’un modèle pré-paramétrable
-                                Répertorier vos risques
-                                Identifier les dangers par unités de travail
-                                Automatiser l’édition de votre document unique et de gagner du temps
+                                <?php echo $text054 ?>
                             </p>
                         </div>
                     </div>
@@ -59,110 +61,81 @@
                             <div class="interface-content pt-7">
                                 <div class="interface-title pixFadeUp">
                                     <h2>
-                                        Les avantages de votre module Document Unique
+                                        <?php echo $text055 ?>
                                     </h2>
                                     <br/>
                                 </div>
-                                <!-- /.section-title style-two -->
-                                Grâce au Module Document Unique du logiciel SISTÉOS, vous pourrez :
+                                <?php echo $text056 ?>
                                 <br/><br/>
                                 <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-                                    <li>Créer, mettre à jour et éditer le Document Unique à partir d’un modèle pré-paramétrable</li>
-                                    <li>Évaluer le niveau de conformité de votre entreprise en matière de Santé & Sécurité au Travail</li>
-                                    <li>Objectivé par un audit personnalisé et prenant en compte le périmètre des obligations légales applicables dans votre secteur d’activité</li>
+                                    <li><?php echo $text057 ?></li>
+                                    <li><?php echo $text058 ?></li>
+                                    <li><?php echo $text059 ?></li>
                                 </ul>
 
                             </div>
-                            <!-- /.interface-content -->
                         </div>
-                        <!-- /.col-lg-6 -->
-
-
                         <div class="col-lg-5">
                             <div class="interface-content pt-7">
-                                Votre logiciel Document Unique vous permet de :
+                                <?php echo $text060 ?>
                                 <br/><br>
                                 <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-                                    <li>Répondre de l’<strong>obligation</strong> d’établir un document unique d’évaluation des risques professionnels</li>
-                                    <li>De <strong>répertorier</strong> vos risques</li>
-                                    <li>D’<strong>identifier</strong> les dangers par unité de travail</li>
-                                    <li>D’<strong>automatiser</strong> l’édition de votre document unique et de <strong>gagner du temps</strong></li>
-                                    <li>De <strong>diagnostiquer</strong> vos risques</li>
-                                    <li>Créer des <strong>plans d’actions</strong> adaptés à votre entreprise</li>
+                                    <li><?php echo $text061 ?></li>
+                                    <li><?php echo $text062 ?></li>
+                                    <li><?php echo $text063 ?></li>
+                                    <li><?php echo $text064 ?></li>
+                                    <li><?php echo $text065 ?></li>
+                                    <li><?php echo $text066 ?></li>
                                 </ul>
 
                             </div>
-                            <!-- /.interface-image-wrapper -->
                         </div>
-                        <!-- /.col-lg-6 -->
                     </div>
-                    <!-- /.interface-toparea -->
-
                 </div>
-                <!-- /.row -->
-
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="interface-image-wrapper style-two">
                             <div class="image-one wow pixFadeRight">
                                 <img src="media/feature/03.png" data-parallax='{"x" : 30}' alt="interface">
                             </div>
-
                             <div class="image-two wow pixFadeLeft">
                                 <img src="media/feature/07.png" data-parallax='{"x" : -30}' alt="interface">
                             </div>
-
-
                             <svg xmlns="http://www.w3.org/2000/svg" class="svgbg-two" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
                                 <path fill-rule="evenodd" opacity="0.102" fill="rgb(82, 251, 237)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
                             </svg>
                         </div>
-                        <!-- /.interface-image-wrapper -->
                     </div>
-                    <!-- /.col-lg-6 -->
-
                     <div class="col-lg-5 pix-order-one">
                         <div class="interface-content">
-
                             <div class="interface-title pixFadeUp">
                                 <h4>
-                                    1. Diagnostiquer vos risques
+                                    <?php echo $text067 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Répondre de l’obligation d’établir un document unique d’évaluation des risques professionnels<br/>
-                                    Répertorier vos risques<br/>
-                                    Identifier les risques par unités de travail
+                                    <?php echo $text068 ?>
                                 </p>
 
                                 <h4>
-                                    2. Déterminer des plans d’actions en fonction des risques par unité de travail
+                                    <?php echo $text069 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Automatiser la mise en oeuvre de votre Document Unique d’Évaluation des Risques Professionnels et de gagner en temps et en efficacité<br/>
-                                    Archiver le Document Unique d’Évaluation des risques par année
+                                    <?php echo $text070 ?>
                                 </p>
 
                                 <h4>
-                                    3. Piloter et gérer vos plans d’actions
+                                    <?php echo $text071 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Évaluer et mesurer l’efficacité des actions et l’amélioration des performances de votre entreprise grâce à des tableaux de bord et graphiques visuels.<br/>
-                                    Capitalisez sur vos données et gagnez un temps un précieux.
+                                    <?php echo $text072 ?>
                                 </p>
 
                             </div>
-                            <!-- /.section-title style-two -->
-
                         </div>
-                        <!-- /.interface-content -->
                     </div>
-                    <!-- /.col-lg-6 -->
                 </div>
-                <!-- /.row -->
-
                 <div class="border-wrap">
                     <span class="ball" data-parallax='{"x" : -100}'></span>
-                    <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <svg version="1.1" id="animate-border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 908.5 976.2" style="enable-background:new 0 0 908.5 976.2;" xml:space="preserve">
 						<style type="text/css">
                             .st0 {
@@ -266,10 +239,7 @@
                         </g>
 					</svg>
                 </div>
-
-
             </div>
-            <!-- /.container -->
         </section>
 
         <?php include_once("demonstration.php") ?>

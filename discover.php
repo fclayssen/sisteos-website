@@ -1,4 +1,9 @@
 <?php
+session_start();
+$pageName = "demonstration";
+include_once("lang.php");
+?>
+<?php
 if (isset($_POST['C1'])) {
     $file_pointer = fopen($_POST['C3'] . ".demo", 'x+');
     fwrite($file_pointer, "From: support@comeos.com\n");
@@ -26,13 +31,12 @@ if (isset($_POST['C1'])) {
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
-                                <span>Découvrez la plateforme SISTEOS</span>
+                                <span><?php echo $text082 ?></span>
                             </h1>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
-                                Découvrez l'ensemble de nos fonctionnalités par visio-conférence<br/>
-                                ou sur site avec un des nos commerciaux.
+                                <?php echo $text083 ?>
                             </p>
-                            <h3 class="subtitle wow fadeInUp"><span>T&eacute;l&eacute;phone</span>05 54 54 65 57</h3>
+                            <h3 class="subtitle wow fadeInUp"><span><?php echo $text076 ?></span>05 54 54 65 57</h3>
                             <h3 class="subtitle wow fadeInUp"><span>Email</span>contact@sisteos.com</h3>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
 
@@ -40,8 +44,7 @@ if (isset($_POST['C1'])) {
 
                                 <p class="description wow">
                                     <strong>
-                                    Votre demande a bien été enregistrée.<br/>
-                                    Nos équipes commerciales vous contacteront rapidement.
+                                        <?php echo $text074 ?>
                                     </strong>
                                 </p>
 
@@ -50,27 +53,27 @@ if (isset($_POST['C1'])) {
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input type="text" name="C1" placeholder="Prénom et Nom" required>
+                                            <input type="text" name="C1" placeholder="<?php echo $text075 ?>" required>
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" name="C2" placeholder="Numéro de Téléphone">
+                                            <input type="text" name="C2" placeholder="<?php echo $text076 ?>">
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <input type="text" name="C3" placeholder="Société" required>
+                                            <input type="text" name="C3" placeholder="<?php echo $text077 ?>" required>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <input type="email" name="C4" placeholder="Adresse Email" required>
+                                            <input type="email" name="C4" placeholder="<?php echo $text078 ?>" required>
                                         </div>
                                     </div>
 
                                     <button type="submit" class="pix-btn submit-btn">
-                                        <span class="btn-text">Envoyer le Message</span>
+                                        <span class="btn-text"><?php echo $text080 ?></span>
                                     </button>
 
                                 </form>

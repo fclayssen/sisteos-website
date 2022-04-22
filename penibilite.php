@@ -1,3 +1,8 @@
+<?php
+session_start();
+$pageName = "penibilite";
+include_once("lang.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include_once("header.php") ?>
@@ -13,17 +18,13 @@
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
-                                <span>Module Pénibilité au travail : Diagnostic, Gestion et Pilotage simple et intuitif</span>
+                                <span><?php echo $text105 ?></span>
                             </h1>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
-                                Définir des facteurs de pénibilité éligibles au sein de votre organisation<br/>
-                                Définir de seuils, limites, intensités, durées quotidiennes et/ou hebdomadaires ou fréquences d’exposition<br/>
-                                Définir les cotations de la pénibilité des emplois de l’organisation<br/>
-                                Mettre en place des plans d’actions
+                                <?php echo $text106 ?>
                             </p>
                         </div>
                     </div>
-
                     <div class="col-lg-6">
                         <div class="banner-six-promo-image text-right">
                             <img src="media/feature/app3.png" class="wow pixZoomIn" alt="saaspik">
@@ -39,7 +40,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="banner-background-element">
                 <div class="triangle">
                     <img src="media/banner/app/triangle.png" alt="saaspik ball">
@@ -59,43 +59,31 @@
                             <div class="interface-content pt-7">
                                 <div class="interface-title pixFadeUp">
                                     <h2>
-                                        Les avantages de votre module Pénibilité au travail
+                                        <?php echo $text107 ?>
                                     </h2>
                                     <br/>
                                 </div>
-                                <!-- /.section-title style-two -->
-                                Grâce au Module Pénibilité au travail du logiciel SISTÉOS, vous pourrez :
+                                <?php echo $text108 ?>
                                 <br/><br/>
                                 <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-                                    <li>Définir des facteurs de pénibilité éligibles au sein de votre organisation</li>
-                                    <li>Définir des seuils, limites, intensités, durées quotidiennes et/ou hebdomadaires ou fréquences d’exposition</li>
+                                    <li><?php echo $text109 ?></li>
+                                    <li><?php echo $text110 ?></li>
                                 </ul>
-
                             </div>
-                            <!-- /.interface-content -->
                         </div>
-                        <!-- /.col-lg-6 -->
-
-
                         <div class="col-lg-5">
                             <div class="interface-content pt-7">
                                 <br/><br/><br/><br/>
                                 <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-                                    <li>Capitaliser des mesures de prévention techniques ou organisationnelles et les moyens de protection collective déjà en place</li>
-                                    <li>Définir les cotations de la pénibilité des emplois de l’organisation</li>
-                                    <li>Mettre en place des plans d’actions</li>
+                                    <li><?php echo $text111 ?></li>
+                                    <li><?php echo $text112 ?></li>
+                                    <li><?php echo $text113 ?></li>
                                 </ul>
 
                             </div>
-                            <!-- /.interface-image-wrapper -->
                         </div>
-                        <!-- /.col-lg-6 -->
                     </div>
-                    <!-- /.interface-toparea -->
-
                 </div>
-                <!-- /.row -->
-
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="interface-image-wrapper style-two">
@@ -112,50 +100,37 @@
                                 <path fill-rule="evenodd" opacity="0.102" fill="rgb(82, 251, 237)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
                             </svg>
                         </div>
-                        <!-- /.interface-image-wrapper -->
                     </div>
-                    <!-- /.col-lg-6 -->
 
                     <div class="col-lg-5 pix-order-one">
                         <div class="interface-content">
 
                             <div class="interface-title pixFadeUp">
                                 <h4>
-                                    1. Diagnostiquer la pénibilité au travail
+                                    <?php echo $text114 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Définition des facteurs de pénibilité éligibles au sein de votre organisation<br/>
-                                    Mesure des seuils, intensités, durées, fréquences d’exposition<br/>
-                                    Gradation des cotations des facteurs de pénibilité au travail<br/>
-                                    Éditer des fiches d’exposition par emploi avec les actions mises en place
+                                    <?php echo $text115 ?>
                                 </p>
 
                                 <h4>
-                                    2. Déterminer des plans d’actions en fonction des risques par emploi
+                                    <?php echo $text116 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Planification des actions de prévention<br/>
-                                    Mise en œuvre et suivi des plans d’action<br/>
-                                    Gestion d’état d’avancement des plans d’action et de l’atteinte des objectifs fixés
+                                    <?php echo $text117 ?>
                                 </p>
 
                                 <h4>
-                                    3. Piloter et gérer vos plans d’actions
+                                    <?php echo $text118 ?>
                                 </h4>
                                 <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-                                    Évaluer et mesurer l’efficacité des actions et l’amélioration des performances grâce à des tableaux de bord et graphiques visuels
+                                    <?php echo $text119 ?>
                                 </p>
 
                             </div>
-                            <!-- /.section-title style-two -->
-
                         </div>
-                        <!-- /.interface-content -->
                     </div>
-                    <!-- /.col-lg-6 -->
                 </div>
-                <!-- /.row -->
-
                 <div class="border-wrap">
                     <span class="ball" data-parallax='{"x" : -100}'></span>
                     <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->

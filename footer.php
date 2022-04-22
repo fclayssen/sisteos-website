@@ -7,10 +7,7 @@
                         <div class="widget footer-widget widget-about">
                             <a href="#" class="footer-logo"><img src="media/sisteos.png" alt="sisteos"></a>
                             <p style="color: white;">
-                                Solution Santé et Sécurité au Travail g&eacute;n&eacute;rer vos documents uniques,
-                                R&eacute;aliser vos Audits, &Eacute;valuer les risques li&eacute;s à la
-                                p&eacute;nibilit&eacute; de vos emplois, R&eacute;pertorier les accidents de travail
-                                et maladies professionnelles.
+                                <?php echo $text047 ?>
                             </p>
                         </div>
                     </div>
@@ -34,13 +31,13 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="widget footer-widget">
-                            <h3 class="widget-title">Nos Modules</h3>
+                            <h3 class="widget-title"><?php echo $text048 ?></h3>
                             <ul class="footer-menu">
-                                <li><a href="document-unique.php">Document Unique</a></li>
-                                <li><a href="accident-du-travail.php">Accident du Travail</a></li>
-                                <li><a href="plan-de-prevention.php">Plan de Pr&eacute;vention</a></li>
-                                <li><a href="penibilite.php">P&eacute;nibilit&eacute;</a></li>
-                                <li><a href="audit.php">Audit</a></li>
+                                <li><a href="document-unique.php"><?php echo $text017 ?></a></li>
+                                <li><a href="accident-du-travail.php"><?php echo $text016 ?>l</a></li>
+                                <li><a href="plan-de-prevention.php"><?php echo $text018 ?></a></li>
+                                <li><a href="penibilite.php"><?php echo $text019 ?></a></li>
+                                <li><a href="audit.php"><?php echo $text020 ?></a></li>
                             </ul>
                         </div>
                     </div>
@@ -48,7 +45,7 @@
             </div>
             <div class="site-info">
                 <div class="copyright text-center">
-                    <p style="color: white;">&copy 2012-2020 Tout droit réservé par <a href="https://comeos.com" target="_blank">Coméos SAS</a>
+                    <p style="color: white;">&copy 2012-2020 <?php echo $text049 ?> <a href="https://comeos.com" target="_blank">Coméos SAS</a>
                     </p>
                 </div>
             </div>

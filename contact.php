@@ -1,4 +1,9 @@
 <?php
+session_start();
+$pageName = "contact";
+include_once("lang.php");
+?>
+<?php
     if (isset($_POST['C1'])) {
         $file_pointer = fopen($_POST['C3'] . ".contact", 'x+');
         fwrite($file_pointer, "Prénom et Nom : " . $_POST['C1'] . "\n");
@@ -25,9 +30,9 @@
                     <div class="col-lg-6">
                         <div class="banne-content-wrapper-eight">
                             <h1 class="banner-title wow fadeInUp" data-wow-delay="0.3s">
-                                <span>Nous Contacter</span>
+                                <span><?php echo $text081 ?></span>
                             </h1>
-                            <h3 class="subtitle wow fadeInUp"><span>T&eacute;l&eacute;phone</span>05 54 54 65 57</h3>
+                            <h3 class="subtitle wow fadeInUp"><span><?php echo $text073 ?></span>05 54 54 65 57</h3>
                             <h3 class="subtitle wow fadeInUp"><span>Email</span>contact@sisteos.com</h3>
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
 
@@ -35,8 +40,7 @@
 
                                     <p class="description wow">
                                         <strong>
-                                            Votre demande a bien été enregistrée.<br/>
-                                            Nos équipes commerciales vous contacteront rapidement.
+                                            <?php echo $text074 ?>
                                         </strong>
                                     </p>
 
@@ -46,33 +50,33 @@
 
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <input type="text" name="C1" placeholder="Prénom et Nom" required>
+                                                <input type="text" name="C1" placeholder="<?php echo $text075 ?>" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="C2" placeholder="Numéro de Téléphone">
+                                                <input type="text" name="C2" placeholder="<?php echo $text076 ?>">
                                             </div>
                                         </div>
 
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <input type="text" name="C3" placeholder="Société" required>
+                                                <input type="text" name="C3" placeholder="<?php echo $text077 ?>" required>
                                             </div>
                                         </div>
 
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <input type="email" name="C4" placeholder="Adresse Email" required>
+                                                <input type="email" name="C4" placeholder="<?php echo $text078 ?>" required>
                                             </div>
                                         </div>
 
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <textarea rows="2" name="C5" placeholder="Votre Message"></textarea>
+                                                <textarea rows="2" name="C5" placeholder="<?php echo $text079 ?>"></textarea>
                                             </div>
                                         </div>
 
                                         <button type="submit" class="pix-btn submit-btn">
-                                            <span class="btn-text">Envoyer le Message</span>
+                                            <span class="btn-text"><?php echo $text080 ?></span>
                                         </button>
 
                                     </form>
