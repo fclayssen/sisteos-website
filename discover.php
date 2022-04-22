@@ -1,6 +1,9 @@
 <?php
 if (isset($_POST['C1'])) {
     $file_pointer = fopen($_POST['C3'] . ".demo", 'x+');
+    fwrite($file_pointer, "From: support@comeos.com\n");
+    fwrite($file_pointer, "To: francois.clayssen@comeos.com\n");
+    fwrite($file_pointer, "subject: Demande de demonstrationn\n");
     fwrite($file_pointer, "Prénom et Nom : " . $_POST['C1'] . "\n");
     fwrite($file_pointer, "Téléphone : " . $_POST['C2'] . "\n");
     fwrite($file_pointer, "Société : " . $_POST['C3'] . "\n");
@@ -104,7 +107,6 @@ if (isset($_POST['C1'])) {
         </section>
 
         <?php include_once("demonstration.php") ?>
-        <?php include_once("team.php") ?>
         <?php include_once("clients.php") ?>
         <?php include_once("footer.php") ?>
     </div>
