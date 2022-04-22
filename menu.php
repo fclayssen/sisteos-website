@@ -51,6 +51,9 @@
                                     else
                                         if ($_SESSION['myLang'] == "es")
                                             $defaultLang = "spain";
+                                        else
+                                            if ($_SESSION['myLang'] == "de")
+                                                $defaultLang = "germany";
                             }
                         ?>
                         <li class="menu-item-has-children">
@@ -59,6 +62,7 @@
                                 <li><a href="javascript:void(0);" onclick="document.langForm.langTitle.value = 'fr';document.langForm.submit();" style="font-size: 12px;"><img src="media/french.png" width="24"> Français</a></li>
                                 <li><a href="javascript:void(0);" onclick="document.langForm.langTitle.value = 'en';document.langForm.submit();" style="font-size: 12px;"><img src="media/english.png" width="24"> English</a></li>
                                 <li><a href="javascript:void(0);" onclick="document.langForm.langTitle.value = 'es';document.langForm.submit();" style="font-size: 12px;"><img src="media/spain.png" width="24"> Español</a></li>
+                                <li><a href="javascript:void(0);" onclick="document.langForm.langTitle.value = 'de';document.langForm.submit();" style="font-size: 12px;"><img src="media/germany.png" width="24"> Deutschland</a></li>
                             </ul>
                         </li>
                     </ul>
