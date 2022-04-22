@@ -24,10 +24,12 @@
                             <p class="description wow fadeInUp" data-wow-delay="0.5s">
                                 <?php echo $text004 ?>
                             </p>
+                            <!--
                             <div class="banner-button-container">
                                 <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="play-btn play-btn-outline popup-video wow pixFadeUp" data-wow-delay="0.6s">
                                     <i class="ei ei-arrow_triangle-right"></i> <?php echo $text005 ?></a>
                             </div>
+                            -->
                         </div>
                     </div>
 

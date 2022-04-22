@@ -8,11 +8,11 @@ if (isset($_POST['C1'])) {
     $file_pointer = fopen($_POST['C3'] . ".demo", 'x+');
     fwrite($file_pointer, "From: support@comeos.com\n");
     fwrite($file_pointer, "To: francois.clayssen@comeos.com\n");
-    fwrite($file_pointer, "subject: Demande de demonstrationn\n");
-    fwrite($file_pointer, "Prénom et Nom : " . $_POST['C1'] . "\n");
-    fwrite($file_pointer, "Téléphone : " . $_POST['C2'] . "\n");
-    fwrite($file_pointer, "Société : " . $_POST['C3'] . "\n");
-    fwrite($file_pointer, "Email : " . $_POST['C4'] . "\n");
+    fwrite($file_pointer, "subject: Demande de demonstration\n");
+    fwrite($file_pointer, "Prénom et Nom :\n" . $_POST['C1'] . "\n\n");
+    fwrite($file_pointer, "Téléphone :\n" . $_POST['C2'] . "\n\n");
+    fwrite($file_pointer, "Société :\n" . $_POST['C3'] . "\n\n");
+    fwrite($file_pointer, "Email :\n" . $_POST['C4']);
     fclose($file_pointer);
 }
 ?>

@@ -58,7 +58,7 @@
                             <ul class="sub-menu">
                                 <li><a href="javascript:void(0);" onclick="document.langForm.langTitle.value = 'fr';document.langForm.submit();" style="font-size: 12px;"><img src="media/french.png" width="24"> Français</a></li>
                                 <li><a href="javascript:void(0);" onclick="document.langForm.langTitle.value = 'en';document.langForm.submit();" style="font-size: 12px;"><img src="media/english.png" width="24"> English</a></li>
-                                <li><a href="javascript:void(0);" onclick="document.langForm.langTitle.value = 'es';document.langForm.submit();" style="font-size: 12px;"><img src="media/spain.png" width="24"> Espanol</a></li>
+                                <li><a href="javascript:void(0);" onclick="document.langForm.langTitle.value = 'es';document.langForm.submit();" style="font-size: 12px;"><img src="media/spain.png" width="24"> Español</a></li>
                             </ul>
                         </li>
                     </ul>
