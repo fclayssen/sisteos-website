@@ -14,6 +14,17 @@ if (isset($_POST['C1'])) {
     fwrite($file_pointer, "Société :\n" . $_POST['C3'] . "\n\n");
     fwrite($file_pointer, "Email :\n" . $_POST['C4']);
     fclose($file_pointer);
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://hooks.slack.com/services/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');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"text\":\"Demande de démonstration sur Sisteos de " . $_POST['C1'] . " de la société " . $_POST['C3'] . " (" . $_POST['C2'] . " - " . $_POST['C4'] . ")\"}");
+    $headers = array();
+    $headers[] = 'Content-Type: application/json';
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_exec($ch);
+    curl_close($ch);
 }
 ?>
 <!DOCTYPE html>

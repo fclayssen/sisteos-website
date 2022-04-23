@@ -2,6 +2,18 @@
     session_start();
     $pageName = "index.php";
     include_once("lang.php");
+
+    $query  = @unserialize(file_get_contents('http://ip-api.com/php/' . $_SERVER['REMOTE_ADDR']));
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://hooks.slack.com/services/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');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"text\":\"Connexion d'un utilisateur de " . $query['city'] . " (" . $query['country'] . " - " . $query['query'] . ")" . " au site Sisteos\"}");
+    $headers = array();
+    $headers[] = 'Content-Type: application/json';
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_exec($ch);
+    curl_close($ch);
 ?>
 <!DOCTYPE html>
 <html lang="fr">

@@ -16,6 +16,17 @@ include_once("lang.php");
         fwrite($file_pointer, "Message :\n");
         fwrite($file_pointer,       $_POST['C5']);
         fclose($file_pointer);
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://hooks.slack.com/services/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');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"text\":\"Demande d'information sur Sisteos de " . $_POST['C1'] . " de la société " . $_POST['C3'] . " (" . $_POST['C2'] . " - " . $_POST['C4'] . ")" . "  : " . str_replace("\r\n", ". ", str_replace("\"", "'", $_POST['C5'])) . "\"}");
+        $headers = array();
+        $headers[] = 'Content-Type: application/json';
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_exec($ch);
+        curl_close($ch);
     }
 ?>
 <!DOCTYPE html>
